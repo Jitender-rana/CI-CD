@@ -22,4 +22,5 @@ jobs:
             whoami
             cd CI-CD
             git pull origin main
-            pm2 restart CI/CD
+            npm run build
+            npm run start
