@@ -11,10 +11,8 @@ app.post("/*",(req,res)=>{
 app.get("/*",(req,res)=>{
     res.json({
         message: "Iam jitender and iam Learning ci/cd",
-        anothermessage: "hahahahahah",
-        chnaged: false,
-        number: 1234567890,
-        string: "hahahhaha sp great",
+        greatness: "yes this great pipeline",
+
     })
 })
 app.get("/cicd",(req,res)=>{
