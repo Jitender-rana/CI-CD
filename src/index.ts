@@ -5,6 +5,7 @@ const port:number=3000;
 app.get("/*",(req,res)=>{
     res.json({
         message: "Iam jitender and iam Learning ci/cd",
+        anothermessage: "hahahahahah"
     })
 })
 app.listen(port,()=>{
