@@ -13,6 +13,8 @@ app.get("/*",(req,res)=>{
         message: "Iam jitender and iam Learning ci/cd",
         anothermessage: "hahahahahah",
         chnaged: false,
+        number: 1234567890,
+        string: "hahahhaha sp great",
     })
 })
 app.get("/cicd",(req,res)=>{
