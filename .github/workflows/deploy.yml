@@ -20,4 +20,6 @@ jobs:
           port: 22
           script: |
             whoami
-            ls -al
+            cd CI-CD
+            git pull origin main
+            pm2 restart CI/CD
