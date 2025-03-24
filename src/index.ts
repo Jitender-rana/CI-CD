@@ -12,6 +12,8 @@ app.get("/*",(req,res)=>{
     res.json({
         message: "Iam jitender and iam Learning ci/cd",
         done: true,
+        completed: "ci/cd beginner and introductiiion is completed",
+        chnaged: true,
 
 
 
