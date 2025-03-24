@@ -11,7 +11,8 @@ app.post("/*",(req,res)=>{
 app.get("/*",(req,res)=>{
     res.json({
         message: "Iam jitender and iam Learning ci/cd",
-        working: false,
+        working: "fine",
+
 
     })
 })

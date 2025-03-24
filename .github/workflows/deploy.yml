@@ -25,6 +25,7 @@ jobs:
             source ~/.nvm/nvm.sh
             cd CI-CD
             pm2 stop CI/CD
-            npm install
+            
             git pull origin main
+            npm run build
             pm2 restart CI/CD
