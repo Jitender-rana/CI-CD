@@ -9,6 +9,7 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     steps:
+
       - name: Checkout the code
         uses: actions/checkout@v2
       - name: multiple command
@@ -20,6 +21,8 @@ jobs:
           port: 22
           script: |
             whoami
+            export NVM_DIR=~/.nvm
+            source ~/.nvm/nvm.sh
             cd CI-CD
             git pull origin main
             npm run build
