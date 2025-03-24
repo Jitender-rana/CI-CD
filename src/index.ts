@@ -5,7 +5,7 @@ const port:number=3000;
 app.use(express.json());
 
 app.post("/*",(req,res)=>{
-    
+
 })
 
 app.get("/*",(req,res)=>{
@@ -13,6 +13,11 @@ app.get("/*",(req,res)=>{
         message: "Iam jitender and iam Learning ci/cd",
         anothermessage: "hahahahahah",
         chnaged: false,
+    })
+})
+app.get("/cicd",(req,res)=>{
+    res.json({
+        message: "ci/cd is implemneted"
     })
 })
 app.listen(port,()=>{
